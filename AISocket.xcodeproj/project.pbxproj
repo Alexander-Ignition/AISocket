@@ -15,6 +15,8 @@
 		113195F81B10A68A00D482C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113195F71B10A68A00D482C5 /* Images.xcassets */; };
 		113195FB1B10A68A00D482C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113195F91B10A68A00D482C5 /* LaunchScreen.xib */; };
 		113196071B10A68B00D482C5 /* AISocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113196061B10A68B00D482C5 /* AISocketTests.m */; };
+		113196151B10A86700D482C5 /* AISocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 113196121B10A86700D482C5 /* AISocket.m */; };
+		113196161B10A86700D482C5 /* AISocketThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 113196141B10A86700D482C5 /* AISocketThread.m */; };
 		D23FAE4F34145F2AF8080856 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6390B08B5703E79413810B0A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,10 @@
 		113196001B10A68B00D482C5 /* AISocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AISocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		113196051B10A68B00D482C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113196061B10A68B00D482C5 /* AISocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AISocketTests.m; sourceTree = "<group>"; };
+		113196111B10A86700D482C5 /* AISocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISocket.h; sourceTree = "<group>"; };
+		113196121B10A86700D482C5 /* AISocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISocket.m; sourceTree = "<group>"; };
+		113196131B10A86700D482C5 /* AISocketThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISocketThread.h; sourceTree = "<group>"; };
+		113196141B10A86700D482C5 /* AISocketThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISocketThread.m; sourceTree = "<group>"; };
 		6390B08B5703E79413810B0A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F07C76CA670AA713032839 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CD137D94C07734063DBF681B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 		113195E61B10A68A00D482C5 /* AISocket */ = {
 			isa = PBXGroup;
 			children = (
+				113196101B10A86700D482C5 /* Socket */,
 				113195EB1B10A68A00D482C5 /* AppDelegate.h */,
 				113195EC1B10A68A00D482C5 /* AppDelegate.m */,
 				113195EE1B10A68A00D482C5 /* MasterViewController.h */,
@@ -129,6 +136,17 @@
 				113196051B10A68B00D482C5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		113196101B10A86700D482C5 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				113196111B10A86700D482C5 /* AISocket.h */,
+				113196121B10A86700D482C5 /* AISocket.m */,
+				113196131B10A86700D482C5 /* AISocketThread.h */,
+				113196141B10A86700D482C5 /* AISocketThread.m */,
+			);
+			path = Socket;
 			sourceTree = "<group>";
 		};
 		8988B5847133FA2F5E3DDEDE /* Frameworks */ = {
@@ -285,6 +303,8 @@
 			files = (
 				113195ED1B10A68A00D482C5 /* AppDelegate.m in Sources */,
 				113195F01B10A68A00D482C5 /* MasterViewController.m in Sources */,
+				113196161B10A86700D482C5 /* AISocketThread.m in Sources */,
+				113196151B10A86700D482C5 /* AISocket.m in Sources */,
 				113195EA1B10A68A00D482C5 /* main.m in Sources */,
 				113195F31B10A68A00D482C5 /* DetailViewController.m in Sources */,
 			);
